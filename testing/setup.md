@@ -1,0 +1,11 @@
+- cd client
+- npm install
+- npm start
+- open another terminal
+- cd server
+- npm install
+- nodemon run index.js
+- open another terminal
+- cd testing
+- pip3 install selenium==3.141.0
+- python run_all_test_cases.py

@@ -1,0 +1,751 @@
+* {
+  font-family: Gill Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =================================================================*/
+/*navbar*/
+.NavContainer {
+  position: relative;
+  width: auto;
+  height: 45px;
+  background-color: #151515;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.navElements a {
+  text-decoration: none;
+  padding: 20px 40px 18px;
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.navElements a:hover {
+  background-color: white;
+  color: red;
+}
+
+.navElements {
+  padding-top: 9px;
+  position: absolute;
+}
+
+.bag {
+  text-decoration: none;
+  padding: 36px 40px 18px;
+  color: white;
+  margin-top: -30px;
+  font-size: 21px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.bag:hover {
+  background-color: white;
+  color: red;
+}
+
+.bagContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* banner video home ===================================================*/
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* =================================================================*/
+/*account page*/
+.accountContainer {
+  width: 100%;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: auto;
+
+}
+
+.centerfocus-signin {
+  margin-top: 2%;
+  width: 35%;
+  background-color: aliceblue;
+  box-shadow: 1px 0px 20px rgb(168, 168, 168);
+  padding-bottom: 6%;
+  max-height: 25em;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.centerfocus {
+  margin-top: 2%;
+  width: 35%;
+  background-color: aliceblue;
+  box-shadow: 1px 0px 20px rgb(168, 168, 168);
+  padding-bottom: 6%;
+  max-height: 30em;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.signInText {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 80px;
+  color: #151515;
+}
+
+.emailContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.passwordContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.firstNameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.lastNameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.first {
+  height: 25px;
+  width: 50%;
+  border: hidden;
+  border-bottom: solid rgb(126, 124, 124) 1px;
+  margin: 20px;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+.first::placeholder {
+  color: gray;
+}
+
+.last {
+  height: 25px;
+  width: 50%;
+  border: hidden;
+  border-bottom: solid rgb(126, 124, 124) 1px;
+  margin: 20px;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+.last::placeholder {
+  color: gray;
+}
+
+.signinEmail {
+  height: 25px;
+  width: 50%;
+  border: hidden;
+  border-bottom: solid rgb(126, 124, 124) 1px;
+  margin: 20px;
+  background-color: transparent;
+  padding-left: 10px;
+
+}
+
+
+.signinEmail::placeholder {
+  color: gray;
+}
+
+.passwordContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.signinPassword {
+  height: 25px;
+  width: 50%;
+  border: hidden;
+  border-bottom: solid rgb(126, 124, 124) 1px;
+  margin: 20px;
+  background-color: transparent;
+  padding-left: 10px;
+}
+
+
+.signinPassword::placeholder {
+  color: gray;
+
+}
+
+.signInButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.signinButton {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(163, 244, 163);
+  font-size: 20px;
+  color: #151515;
+  font-weight: 500;
+
+}
+
+.newAccount {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.createAccountButton {
+  margin-right: 25%;
+  text-decoration: none;
+  color: #151515;
+}
+
+.forgotPasswordButton {
+  text-decoration: none;
+  color: #151515;
+
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.result {
+  color: rgb(194, 2, 2);
+}
+
+
+/* =================================================================*/
+/*new account page */
+
+.createAccountModal {
+  position: absolute;
+  z-index: 4;
+  margin-top: 2%;
+  width: 35%;
+  height: 442px;
+  background-color: aliceblue;
+  box-shadow: 1px 0px 20px rgb(168, 168, 168);
+  height: 472px;
+  background-color: aliceblue;
+
+}
+
+/* =================================================================*/
+/*password recovery page*/
+
+.forgotPasswordModal {
+  position: absolute;
+  z-index: 5;
+  margin-top: 2%;
+  width: 35%;
+  height: 472px;
+  background-color: aliceblue;
+  height: 442px;
+  box-shadow: 1px 0px 20px rgb(168, 168, 168);
+
+}
+
+
+/* =================================================================*/
+/*Cart*/
+.cart-container {
+  text-align: center;
+  width: 50em;
+  height: 100%;
+  margin: 5em;
+  padding-bottom: 2em;
+
+  background-color: antiquewhite;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.userPaymentInfo {
+  margin-top: -110px;
+  background-color: antiquewhite;
+  width: 300px;
+  margin-left: 70%;
+  margin-top: -23.2%;
+}
+
+.userPaymentInfo input {
+  margin: 20px;
+  width: 200px;
+  height: 20px;
+}
+
+.cart-title {
+  padding-top: .5em;
+  padding-bottom: .25em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.cart-tab {
+  background-color: saddlebrown;
+  width: 10em;
+  height: 0.15em;
+  margin: auto
+}
+
+.cartSize {
+  text-align: right;
+  margin-right: 70px;
+}
+
+.deleteItemContainer {
+  width: 10px;
+  height: 10px;
+  margin-right: 50px;
+  margin-top: 120px;
+}
+
+.deleteItem {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.item1 {
+  max-width: 45em;
+  background-color: white;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  margin-left: 2.5em;
+  margin-top: 1em;
+  display: flex;
+  border-radius: .5em;
+}
+
+.product-image {
+  background-size: 12em;
+  max-width: 12em;
+  margin-left: .5em;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25em;
+}
+
+.product-contents {
+  margin: 1em;
+  max-width: 16em;
+  width: 100%;
+  text-align: left;
+
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 1em;
+}
+
+.product-color {
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.product-size {
+  color: gray;
+  margin-bottom: 1em;
+}
+
+.product-price-quantity {
+  max-width: 16.5em;
+  width: 100%;
+  margin: 1em;
+  font-size: medium;
+  text-align: right;
+}
+
+.product-price {
+  margin-bottom: 1em;
+  margin-left: 100px;
+}
+
+.totalPrice {
+  text-align: right;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  padding: 3px;
+}
+
+.placeOrderBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3rem;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.placeOrderBtn:hover {
+  background-color: sandybrown;
+  transition: 0.3s;
+}
+
+/* =================================================================*/
+/*Home*/
+.categoryContainer {
+  padding: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 8px black, 0 0 15px black, 0 0 5px black;
+}
+
+.category {
+  border: solid 2px antiquewhite;
+  padding: 0 30px 50px;
+  margin: 2% 6%;
+  border-radius: 20px;
+  transition: background-color .5s, padding .3s, font-size .3s, color .5s;
+  -webkit-backdrop-filter: blur(8px) brightness(0.9);
+}
+
+.category img {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 0 30px 50px;
+  -webkit-backdrop-filter: blur(8px) brightness(1.5);
+}
+
+/* =================================================================*/
+/*shoe_one */
+.shoe_background {
+  background-color: white;
+  min-height: 500px;
+}
+
+.shoeHeaderContainer {
+  background-color: white;
+}
+
+.shoeHeaderContainer h2 {
+  padding-left: 55px;
+}
+
+.shoeHeader {
+  font-size: 100px;
+  margin-left: 40px;
+}
+
+.shoePageAddToCartBtn {
+  border: none;
+  background-color: black;
+  float: right;
+  margin-right: 100px;
+  margin-top: 35px;
+  padding: 4px;
+  width: 200px;
+  height: 40px;
+  font-size: 30px;
+  display: inline-block;
+  color: white;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.shoePageAddToCartBtn:hover {
+  background-color: sandybrown;
+  transition: 0.3s;
+}
+
+.pagePrice {
+  color: red;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+canvas {
+  height: 500px;
+}
+
+.logoContainer {
+  text-align: center;
+}
+
+.logoContainer h1 {
+  color: red;
+  font-size: 180px;
+  margin-bottom: -20px;
+  letter-spacing: 10px;
+  padding-top: 40px;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+.logoContainer h3 {
+  font-size: 94px;
+  padding-bottom: 30px;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+}
+
+.slogan {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 8px black, 0 0 15px black, 0 0 5px black;
+}
+
+/* =================================================================*/
+/*Shop*/
+.shopContainer {
+  display: flex;
+}
+
+.sidebarContainer {
+  /*holds sidebar*/
+  width: 15%;
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+}
+
+.mainPanelContainer {
+  /*contains all shoe panels and slideshow panel*/
+  width: 100%;
+  height: auto;
+  background-color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+}
+
+.sidebar {
+  width: 90%;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.panel {
+  /*slideshow*/
+  width: 75%;
+  height: 300px;
+  background-color: cornsilk;
+  margin: 40px 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.imageShoe {
+  height: 300px;
+  width: 750px;
+}
+
+.row {
+  /*holds upto 3 shoe images*/
+  width: 100%;
+  height: 300px;
+  display: flex;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.item {
+  /*holds shoe image */
+  font-weight: bold;
+  width: 35%;
+  height: 90%;
+  background-color: cornsilk;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.item:hover .panelRise {
+  height: 25%;
+  color: white;
+  background-color: red;
+  transition: 0.5s;
+}
+
+
+.panelRise {
+  color: cornsilk;
+  width: auto;
+  height: 0;
+  background-color: #151515;
+  transition: height 0.3s;
+  align-content: center;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.name {
+  transition: color 0.3s;
+}
+
+.price {
+  transition: color 0.3s;
+}
+
+.sizes {
+  transition: color 0.3s;
+}
+
+.addToCartBtn {
+  border: none;
+  background-color: black;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  transition: color .3s;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 250px;
+  color: white;
+  border-radius: 100%;
+}
+
+.addToCartBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.mens {
+  font-size: 120px;
+  overflow: hidden;
+}
+
+
+/* Footer ==============================================================*/
+
+.footerContainer {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  color: white;
+  background: #151515;
+  min-height: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menuContainer li {
+  list-style: none;
+}
+
+.menuContainer li a {
+  padding: 30px 30px 5px;
+  font-size: 1.4em;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.menuContainer li a:hover {
+  opacity: 1;
+}
+
+.footerContainer p {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 20px 40px 20px;
+}
+
+/* =================================================================*/
+/*userPage */
+.shoeInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.shoeInfo input {
+  margin: 20px;
+  width: 200px;
+
+  height: 20px
+}
+
+/*Admin Page*/
+.role-change-container {
+  width: 100%;
+  max-width: 50em;
+  background-color: rgb(227, 227, 227);
+  justify-content: center;
+  margin: 5em auto;
+  position: auto;
+}
+
+.role {
+  display: block;
+  margin: 0 auto;
+}
+
+.role-change-title {
+  text-align: center;
+  height: 20px
+}

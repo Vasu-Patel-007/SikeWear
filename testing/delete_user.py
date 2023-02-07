@@ -25,7 +25,7 @@ email = "hello@gmail.com"
 
 # driver.close()
 
-client = pymongo.MongoClient("mongodb+srv://admin:patel@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
 data = client.test.accounts
 
 data.delete_one({"email":email})

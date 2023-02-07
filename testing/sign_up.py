@@ -40,7 +40,7 @@ submite_data.click()
 
 driver.close()
 
-client = pymongo.MongoClient("mongodb+srv://admin:patel@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
 data = client.test.accounts
 
 entry = data.find_one({"email":"hello@gmail.com"})

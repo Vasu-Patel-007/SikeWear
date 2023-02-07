@@ -3,7 +3,7 @@ import pymongo
 shoename = "sucks"
 
 
-client = pymongo.MongoClient("mongodb+srv://admin:patel@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority")
 data = client.test.shoes
 
 data.delete_one({"shoeName":"sucks"})

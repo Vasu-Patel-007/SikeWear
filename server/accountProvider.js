@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const { Roles } = require("./constants");
 
-const MongoDB_URL = "mongodb+srv://admin:patel@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority";
+// the link below contained the username and password, so I had to clear it out of the link. The database part won't work.
+const MongoDB_URL = "mongodb+srv://@sikewearcluster.r7rsoch.mongodb.net/?retryWrites=true&w=majority";
 
 
 const connectDB = async () => {
